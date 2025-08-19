@@ -1,0 +1,303 @@
+* {
+  font-family: "Gothic A1", sans-serif;
+  /* border:1px solid red; */
+
+}
+
+.first {
+  background-color: #b58f7a;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-item {
+  padding: 0px 25px;
+  height: 20px;
+}
+
+.first .scroll-item .item {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.22px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  position: relative;
+  animation: animation 10s ease infinite;
+}
+
+@keyframes animation {
+  0% {
+    top: 0;
+  }
+
+  25% {
+    top: -20px
+  }
+
+  50% {
+    top: -40px
+  }
+
+  75% {
+    top: -20px
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.one {
+  display: flex;
+  flex-direction: row;
+    padding-top: 28px;
+
+}
+
+.links{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.links h6 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px !important;
+}
+
+.links p {
+  font-size: 13px;
+  margin-bottom: 12px !important;
+}
+
+.secondhalf{
+  display: flex;
+  flex-direction: row;
+  padding-right: 40px;
+  padding-top: 23px;
+}
+
+.copyright{
+  display: flex;
+  flex-direction: row;
+  padding-left: 30px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+.copyright .socialmedia{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.store_img {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 0px 10px;
+}
+
+.btm_minusone .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.btm_minusthree {
+  width: 100%;
+  position: relative;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content Overlay */
+.z_text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  line-height: 1;
+  z-index: 10;
+}
+
+.button a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button a:hover {
+  background: white;
+  color: black;
+}
+
+.btm_minusfour .container .row {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+
+
+.btm_minusfour .container .row div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btm_minusfive .container .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btm_minusfive .container .row .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transparent-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.transparent-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+/* btm_minustwo */
+.btm_minustwo {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  color: #333;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 15px;
+}
+
+/* Headings styling */
+.btm_minustwo h5 {
+  font-size: 18px;
+  color: #222;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Paragraph styling */
+.btm_minustwo p {
+  font-size: 14px;
+}
+
+/* Link styling */
+.btm_minustwo a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.btm_minustwo a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* FAQ section specific styling */
+.btm_minustwo .qa {
+  margin-top: 2rem;
+}
+
+.btm_minustwo .qa h5 {
+  font-size: 18px;
+  color: #222;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.btm_minustwo .qa li {
+  font-size: 14px;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.btm_minustwo .qa li p {
+  font-size: 14px;
+}
+
+.jewelry-categories {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.jewelry-categories .category-column {
+  display: grid;
+  grid-auto-flow: column;
+  font-family: Arial, sans-serif;
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
+
+.category-column a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  padding-top: 5px;
+}
+
+.category-column a:hover {
+  color: blue;
+  text-decoration: underline;
+}
