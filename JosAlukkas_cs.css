@@ -4,48 +4,121 @@
 
 }
 
-.first {
-  background-color: #b58f7a;
+.scroll-container {
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  background-color: #b76c42;
+  border: 0px solid white;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+}
+
+.scroll-text {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  animation: scrollUp 10s linear infinite;
 }
 
-.scroll-item {
-  padding: 0px 25px;
-  height: 20px;
-}
-
-.first .scroll-item .item {
-  color: #fff;
-  font-size: 12px;
-  letter-spacing: 0.22px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  position: relative;
-  animation: animation 10s ease infinite;
-}
-
-@keyframes animation {
+@keyframes scrollUp {
   0% {
-    top: 0;
+    top: 100%;
   }
 
-  25% {
-    top: -20px
+  33% {
+    top: 0%;
   }
 
-  50% {
-    top: -40px
-  }
-
-  75% {
-    top: -20px
+  66% {
+    top: -100%;
   }
 
   100% {
-    top: 0;
+    top: -200%;
   }
 }
+
+.scroll-item {
+  padding: 10px;
+}
+
+.navtag {
+  padding: 10px;
+  box-shadow: 1px 2px 5px #8282821c;
+}
+
+.nav {
+  padding-left: 2px;
+}
+
+.navtag img {
+  padding-left: 40%;
+  padding-top: 10px;
+  size-adjust: 40px;
+}
+
+.nav-item1 {
+  padding-left: 23.5%;
+}
+
+.navtag2 {
+  justify-items: center;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #b8860b;
+  /* gold tone */
+  motion: 2s;
+}
+
+.TrendingCategory {
+  padding: 2%;
+  font-weight: normal;
+  font-size: 2.5em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+.container {
+  text-align: center;
+}
+
+.item p {
+  font-size: 14px;
+  color: #333;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  border-color: white;
+}
+
+.card-body span {
+  font-size: medium;
+  font-weight: bold;
+}
+
+.card-body span:hover {
+  text-decoration: underline gold;
+}
+
+.fcont img:hover {
+  transform: scale(1.04);
+}
+
+.fcont p:hover {
+  color: gold;
+}
+
+.mb-3 {
+  font-weight: 400;
+}
+
 
 .footer {
   display: flex;
@@ -56,11 +129,11 @@
 .one {
   display: flex;
   flex-direction: row;
-    padding-top: 28px;
+  padding-top: 28px;
 
 }
 
-.links{
+.links {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -76,14 +149,14 @@
   margin-bottom: 12px !important;
 }
 
-.secondhalf{
+.secondhalf {
   display: flex;
   flex-direction: row;
   padding-right: 40px;
   padding-top: 23px;
 }
 
-.copyright{
+.copyright {
   display: flex;
   flex-direction: row;
   padding-left: 30px;
@@ -91,7 +164,7 @@
   padding-bottom: 50px;
 }
 
-.copyright .socialmedia{
+.copyright .socialmedia {
   display: flex;
   flex-direction: row;
   justify-content: end;
